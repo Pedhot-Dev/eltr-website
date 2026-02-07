@@ -31,9 +31,10 @@ const Navbar = () => {
         <nav className="fixed top-0 w-full z-50 bg-secondary/95 dark:bg-black/95 backdrop-blur-sm shadow-lg border-b border-gray-800 transition-colors duration-300">
             <div className="container mx-auto px-4 h-20 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-primary tracking-wide" onClick={closeMenu}>
-                    <Car className="w-8 h-8" />
-                    <span>EL TRANSPORTERS</span>
+                <Link to="/" className="flex items-center gap-3" onClick={closeMenu}>
+                    {/* <Car className="w-8 h-8" /> */}
+                    <img src="/img/El_Transporters_NBG.png" alt="El Transporters Logo" className="h-10 w-auto object-contain" />
+                    <span className="text-xl font-bold text-primary tracking-wide hidden sm:block">EL TRANSPORTERS</span>
                 </Link>
 
                 {/* Desktop Menu */}
